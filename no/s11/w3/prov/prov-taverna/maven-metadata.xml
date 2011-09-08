@@ -2,11 +2,10 @@
 <metadata>
   <groupId>no.s11.w3.prov</groupId>
   <artifactId>prov-taverna</artifactId>
-  <version>1.0-SNAPSHOT</version>
   <versioning>
     <versions>
       <version>1.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20110907133107</lastUpdated>
+    <lastUpdated>20110908101821</lastUpdated>
   </versioning>
 </metadata>

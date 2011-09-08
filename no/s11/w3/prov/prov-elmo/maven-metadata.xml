@@ -2,11 +2,10 @@
 <metadata>
   <groupId>no.s11.w3.prov</groupId>
   <artifactId>prov-elmo</artifactId>
-  <version>1.0-SNAPSHOT</version>
   <versioning>
     <versions>
       <version>1.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20110907133232</lastUpdated>
+    <lastUpdated>20110908101906</lastUpdated>
   </versioning>
 </metadata>
