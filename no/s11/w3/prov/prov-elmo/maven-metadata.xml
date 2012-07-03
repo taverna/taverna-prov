@@ -3,9 +3,11 @@
   <groupId>no.s11.w3.prov</groupId>
   <artifactId>prov-elmo</artifactId>
   <versioning>
+    <release>1.0</release>
     <versions>
       <version>1.0-SNAPSHOT</version>
+      <version>1.0</version>
     </versions>
-    <lastUpdated>20110908204432</lastUpdated>
+    <lastUpdated>20120703142907</lastUpdated>
   </versioning>
 </metadata>
