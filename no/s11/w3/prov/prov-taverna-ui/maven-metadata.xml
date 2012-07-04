@@ -3,11 +3,12 @@
   <groupId>no.s11.w3.prov</groupId>
   <artifactId>prov-taverna-ui</artifactId>
   <versioning>
-    <release>1.0</release>
+    <release>1.1</release>
     <versions>
       <version>1.0-SNAPSHOT</version>
       <version>1.0</version>
+      <version>1.1</version>
     </versions>
-    <lastUpdated>20120703142934</lastUpdated>
+    <lastUpdated>20120704153820</lastUpdated>
   </versioning>
 </metadata>

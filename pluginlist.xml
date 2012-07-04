@@ -2,4 +2,5 @@
 <plugins>
 <plugin>prov-taverna-plugin-1.0-SNAPSHOT.xml</plugin>
 <plugin>prov-taverna-plugin-1.0.xml</plugin>
+<plugin>prov-taverna-plugin-1.1.xml</plugin>
 </plugins>
