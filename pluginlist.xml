@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugins>
+    <!--
 <plugin>prov-taverna-plugin-1.0-SNAPSHOT.xml</plugin>
 <plugin>prov-taverna-plugin-1.0.xml</plugin>
 <plugin>prov-taverna-plugin-1.1.xml</plugin>
+-->
+<plugin>prov-taverna-plugin-1.2.xml</plugin>
 </plugins>
