@@ -6,4 +6,5 @@
 <plugin>prov-taverna-plugin-1.1.xml</plugin>
 -->
 <plugin>prov-taverna-plugin-1.2.xml</plugin>
+<plugin>prov-taverna-plugin-1.3.xml</plugin>
 </plugins>
