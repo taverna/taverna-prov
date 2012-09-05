@@ -9,4 +9,5 @@
 <plugin>prov-taverna-plugin-1.3.xml</plugin>
 <plugin>prov-taverna-plugin-1.4.xml</plugin>
 <plugin>prov-taverna-plugin-1.5.xml</plugin>
+<plugin>prov-taverna-plugin-1.6.xml</plugin>
 </plugins>
