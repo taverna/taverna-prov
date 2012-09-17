@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.purl.wf4ever.provtaverna</groupId>
+  <artifactId>prov-taverna-owl-bindings</artifactId>
+  <versioning>
+    <release>1.8</release>
+    <versions>
+      <version>1.8</version>
+    </versions>
+    <lastUpdated>20120914160443</lastUpdated>
+  </versioning>
+</metadata>
