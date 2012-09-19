@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.purl.wf4ever.provtaverna</groupId>
+	<artifactId>prov-taverna</artifactId>
+	<version>1.9</version>
+	<packaging>pom</packaging>
+	<name>Taverna PROV</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<!-- Update according to latest Taverna version in www.mygrid.org.uk/dev/wiki/display/developer/Maven+module+version+numbers -->
+		<t2.core.version>1.4</t2.core.version>
+		<t2.activities.version>1.4</t2.activities.version>
+		<t2.ui.api.version>1.4</t2.ui.api.version>
+		<t2.ui.impl.version>1.4</t2.ui.impl.version>
+		<t2.ui.components.version>1.4.1</t2.ui.components.version>
+		<t2.workbench.version>2.4.0</t2.workbench.version>
+		<t2.results.version>1.4</t2.results.version>
+		<t2.taverna-commandline.version>1.4</t2.taverna-commandline.version>
+
+		<alibaba.version>2.0-rc5</alibaba.version>
+		<!-- Because of Raven this must match whatever Elmo/Alibaba depends on! 
+			:( -->
+		<sesame.version>2.6.9</sesame.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1.2</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>jar</goal>
+							<goal>test-jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>test-jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.7.1</version>
+				<configuration>
+					<skip>false</skip>
+					<systemProperties>
+						<property>
+							<name>java.awt.headless</name>
+							<value>true</value>
+						</property>
+					</systemProperties>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<!-- The myGrid repository for Taverna dependencies -->
+			<releases />
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>mygrid-repository</id>
+			<name>myGrid Repository</name>
+			<url>http://www.mygrid.org.uk/maven/repository</url>
+		</repository>
+		<repository>
+			<releases />
+			<snapshots />
+			<!-- The repository that your jars are deployed to -->
+			<id>taverna-prov</id>
+			<name>Taverna Prov Repository</name>
+			<url>http://wf4ever.github.com/taverna-prov/</url>
+		</repository>
+		<repository>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>aduna-opensource.releases</id>
+			<name>Aduna Open Source - Maven releases</name>
+			<url>http://repo.aduna-software.org/maven2/releases</url>
+		</repository>
+		<repository>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<id>aduna-opensource.snapshots</id>
+			<name>Aduna Open Source - Maven snapshots</name>
+			<url>http://repo.aduna-software.org/maven2/snapshots</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>aduna-opensource.releases</id>
+			<name>Aduna Open Source - Maven releases</name>
+			<url>http://repo.aduna-software.org/maven2/releases</url>
+		</pluginRepository>
+		<pluginRepository>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>mygrid-repository</id>
+			<name>myGrid Repository</name>
+			<url>http://www.mygrid.org.uk/maven/repository</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<!-- The location of your plugin site -->
+	<distributionManagement>
+		<repository>
+			<id>my-repository</id>
+			<name>My Plugin Site</name>
+			<url>file:///${user.home}/src/taverna-prov-gh/</url>
+		</repository>
+		<snapshotRepository>
+			<id>my-test-repository</id>
+			<name>My Test Plugin Site</name>
+			<url>file:///${user.home}/src/taverna-prov-gh/</url>
+		</snapshotRepository>
+	</distributionManagement>
+	<scm>
+		<url>https://github.com/wf4ever/taverna-prov</url>
+		<connection>scm:git:git://github.com/wf4ever/taverna-prov.git</connection>
+		<developerConnection>scm:git:git@github.com:wf4ever/taverna-prov.git</developerConnection>
+	</scm>
+	<issueManagement>
+		<system>github</system>
+		<url>https://github.com/wf4ever/taverna-prov/issues</url>
+	</issueManagement>
+	<organization>
+		<name>Wf4Ever</name>
+		<url>http://www.wf4ever-project.org/</url>
+	</organization>
+	<url>http://wf4ever.github.com/taverna-prov/</url>
+	<licenses>
+		<license>
+			<name>GNU Lesser General Public License 3.0</name>
+			<url>http://www.gnu.org/licenses/lgpl-3.0</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+
+	<modules>
+		<module>prov-taverna-ui</module>
+		<module>prov-taverna-plugin</module>
+		<module>prov-taverna-owl-bindings</module>
+		<module>prov-taverna-export</module>
+		<module>prov-taverna-cmdline</module>
+	</modules>
+</project>
