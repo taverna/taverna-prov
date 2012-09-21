@@ -3,11 +3,12 @@
   <groupId>org.purl.wf4ever.provtaverna</groupId>
   <artifactId>prov-taverna-owl-bindings</artifactId>
   <versioning>
-    <release>1.9</release>
+    <release>1.10</release>
     <versions>
       <version>1.8</version>
       <version>1.9</version>
+      <version>1.10</version>
     </versions>
-    <lastUpdated>20120919154854</lastUpdated>
+    <lastUpdated>20120921153119</lastUpdated>
   </versioning>
 </metadata>
