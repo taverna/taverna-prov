@@ -2,7 +2,7 @@
 <plugins:plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://taverna.sf.net/2008/xml/plugins http://taverna.sourceforge.net/2008/xml/plugins/plugins-2008-10-16.xsd" xmlns:plugins="http://taverna.sf.net/2008/xml/plugins">
 <provider>org.purl.wf4ever</provider>
 <identifier>org.purl.wf4ever.provtaverna.prov-taverna-plugin</identifier>
-<version>1.10</version>
+<version>2.0</version>
 <name>Taverna PROV plugin</name>
 <description/>
 <enabled>true</enabled>
