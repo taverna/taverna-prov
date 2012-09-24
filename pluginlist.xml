@@ -14,4 +14,5 @@
 <plugin>prov-taverna-plugin-1.8.xml</plugin>
 <plugin>prov-taverna-plugin-1.9.xml</plugin>
 <plugin>prov-taverna-plugin-1.10.xml</plugin>
+<plugin>prov-taverna-plugin-2.00.xml</plugin>
 </plugins>
